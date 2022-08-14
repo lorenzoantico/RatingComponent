@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body, html{   
+    height: 100%;
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container-geral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: var(--very-dark-blue);
+    height: 100%;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: var(--dark-blue);
+    margin-bottom: 10px;
+    padding: 25px;
+    border-radius: 20px;
+    width: 322px;
+}
+
+.cabecalho-nota{
+    display: flex;
+    align-self: flex-start;
+}
+
+.icone-estrela{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+    background-color: hsl(216, 12%, 54%, 0.1);
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    padding: 18px;   
+}
+
+.icone-estrela img {
+    max-width: 12px;
+}
+
+.conteudo-principal{
+    margin-bottom: 20px;
+}
+
+.conteudo-texto h2{
+    margin-bottom: 15px;
+}
+
+.conteudo-texto{
+    margin-bottom: 20px;
+}
+
+h2{
+    color: var(--white);
+}
+
+p{
+    color: var(--medium-grey);
+}
+
+.container-botoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.botao-notas{
+    background-color: hsl(216, 12%, 54%, 0.1);
+    border: none;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    color: var(--light-grey);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.botao-notas:hover{
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.botao-submit{
+    width: 100%;
+    height: 35px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.botao-submit:hover{
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+.no-show {
+    display: none;
+}
+
+.card:last-child{
+    padding: 40px;
+}
+
+.cabecalho-agradecimento img{
+    margin-bottom: 20px;    
+}
+
+.cabecalho-agradecimento{
+    margin-bottom: 20px;
+}
+
+.return-notas{
+    background-color: hsl(216, 12%, 54%, 0.1);
+    border-radius: 25px;
+    padding: 7px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.return-notas p{
+    color: var(--orange);
+}
+
+
+.conteudo-agradecimento h2{
+    margin-bottom: 15px;
+
+}
+.conteudo-agradecimento{
+    text-align: center;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+    color: var(--medium-grey);
+}
+.attribution a { 
+    color: var(--orange); 
+}
+
+
+.selecionado{
+    color: var(--white);
+    background-color: var(--light-grey);
+}
